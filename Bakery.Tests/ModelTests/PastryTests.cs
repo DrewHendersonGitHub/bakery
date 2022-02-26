@@ -8,24 +8,20 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void Pastry_ConstructorTest_Int()
-    {
-      Pastry newPastry = new Pastry(11);
-      Assert.AreEqual(11, newPastry.Amount);
-    }
-    [TestMethod]
     public void GetCost_ReturnsCostOfBreadForAnAmount_Int()
     {
-      Pastry newPastry = new Pastry(0);
-      Assert.AreEqual(0, newPastry.GetCost());
-      Pastry newPastry2 = new Pastry(1);
-      Assert.AreEqual(2, newPastry2.GetCost());
-      Pastry newPastry3 = new Pastry(2);
-      Assert.AreEqual(4, newPastry3.GetCost());
-      Pastry newPastry4 = new Pastry(3);
-      Assert.AreEqual(5, newPastry4.GetCost());
-      Pastry newPastry5 = new Pastry(10);
-      Assert.AreEqual(17, newPastry5.GetCost());
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(0, newPastry.GetCost(0));
+      Pastry newPastry1 = new Pastry();
+      Assert.AreEqual(2, newPastry1.GetCost(1));
+      Pastry newPastry2 = new Pastry();
+      Assert.AreEqual(4, newPastry2.GetCost(2));
+      Pastry newPastry3 = new Pastry();
+      Assert.AreEqual(5, newPastry3.GetCost(3));
+      Pastry newPastry4 = new Pastry();
+      Assert.AreEqual(7, newPastry4.GetCost(4));
+      Pastry newPastry5 = new Pastry();
+      Assert.AreEqual(167, newPastry5.GetCost(100));
     }
   }
 }
