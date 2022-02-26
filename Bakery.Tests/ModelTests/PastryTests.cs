@@ -8,7 +8,7 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void Pastry_ConstructorTest_String()
+    public void Pastry_ConstructorTest_Int()
     {
       Pastry newPastry = new Pastry(11);
       Assert.AreEqual(11, newPastry.Amount);
