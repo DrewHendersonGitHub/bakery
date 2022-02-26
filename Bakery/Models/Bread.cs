@@ -1,3 +1,5 @@
+using System;
+
 namespace Bakery
 {
   public class Bread
@@ -10,7 +12,7 @@ namespace Bakery
     }
     public int GetCost()
     {
-      return 0;
+      return 5 * (Amount - (int)Convert.ToSingle(Amount / 3));
     }
   }
 }
