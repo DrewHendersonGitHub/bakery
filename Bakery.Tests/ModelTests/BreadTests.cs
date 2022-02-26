@@ -10,8 +10,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void Bread_ConstructorTest_String()
     {
-      Bread newBread = new Bread();
-      Assert.AreEqual(5, newBread.amount());
+      Bread newBread = new Bread(8);
+      Assert.AreEqual(8, newBread.Amount);
     }
   }
 }
