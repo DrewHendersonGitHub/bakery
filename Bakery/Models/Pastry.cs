@@ -10,6 +10,7 @@ namespace Bakery
     public Pastry()
     {
       Cost = 2;
+      Amount = -1;
     }
     public int GetCost(int amount)
     {
