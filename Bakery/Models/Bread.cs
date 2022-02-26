@@ -8,5 +8,9 @@ namespace Bakery
     {
       Amount = amount;
     }
+    public int GetCost()
+    {
+      return 0;
+    }
   }
 }
