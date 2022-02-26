@@ -12,7 +12,7 @@ namespace Bakery
     }
     public int GetCost()
     {
-      return 0;
+      return 2 * Amount - (int)Convert.ToSingle(Amount / 3);
     }
   }
 }
