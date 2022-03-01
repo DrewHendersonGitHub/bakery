@@ -8,6 +8,22 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
+    public void Get_ReturnsTheValueOfCostOrAmount_Int()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(2, newPastry.Cost);
+      Assert.AreEqual(-1, newPastry.Amount);
+    }
+    [TestMethod]
+    public void Set_SetsTheValueOfCostOrAmount_Int()
+    {
+      Pastry newPastry = new Pastry();
+      newPastry.Cost = 2;
+      newPastry.Amount = 9;
+      Assert.AreEqual(2, newPastry.Cost);
+      Assert.AreEqual(9, newPastry.Amount);
+    }
+    [TestMethod]
     public void GetCost_ReturnsCostOfBreadForAnAmount_Int()
     {
       Pastry newPastry = new Pastry();

@@ -8,6 +8,22 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void Get_ReturnsTheValueOfCostOrAmount_Int()
+    {
+      Bread newBread = new Bread();
+      Assert.AreEqual(5, newBread.Cost);
+      Assert.AreEqual(-1, newBread.Amount);
+    }
+    [TestMethod]
+    public void Set_SetsTheValueOfCostOrAmount_Int()
+    {
+      Bread newBread = new Bread();
+      newBread.Cost = 4;
+      newBread.Amount = 7;
+      Assert.AreEqual(4, newBread.Cost);
+      Assert.AreEqual(7, newBread.Amount);
+    }
+    [TestMethod]
     public void GetCost_ReturnsCostOfBreadForAnAmount_Int()
     {
       Bread newBread = new Bread();
